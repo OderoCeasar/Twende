@@ -17,24 +17,26 @@ export const Contact = (props) => {
   const clearState = () => setState({ ...initialState });
   
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(name, email, message);
-    
-    
-    
-    emailjs
-      .sendForm("service_xe3q7kk", "template_h8e8fpr", e.target, "FTmjclTcWJu_inEuj")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
+ const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm("service_xe3q7kk", "template_h8e8fpr", e.target, "FTmjclTcWJu_inEuj")
+    .then(
+      (result) => {
+        if (process.env.NODE_ENV === "development") {
+          console.log("Success:", result.text);
         }
-      );
-  };
+        clearState();
+      },
+      (error) => {
+        if (process.env.NODE_ENV === "development") {
+          console.log("Error:", error.text);
+        }
+      }
+    );
+};
+
   return (
     <div>
       <div id="contact">
@@ -48,7 +50,7 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
