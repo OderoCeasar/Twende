@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export const Header = (props) => {
   return (
     <header id="header">
@@ -16,10 +17,29 @@ export const Header = (props) => {
                 <a
                   href="https://play.google.com/store"
                   className="btn btn-custom btn-lg page-scroll"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                            background: "transparent",
+                            padding: 0,
+                            border: "none",
+                            boxShadow: "none",
+                            outline: "none",
+                            borderRadius: 0,
+                            display: "inline-block"
+                       }}
                 >
-              
+                  <img
+                    src="/img/GetItOnGooglePlay.png"
+                    alt="Get it on Google Play"
+                    style={{
+                            width: "260px",
+                            height: "auto",
+                            display: "block"
+                          }}
+                  />
                 
-                  Get it on Google Play
+                  
                 </a>{" "}
               </div>
             </div>
