@@ -1,0 +1,48 @@
+{
+  "Header": {
+    "title": "TWENDE",
+    "paragraph": "Travel More, Spend Less"
+  },
+  "About": {
+    "paragraph": "Twende is Africa’s top travel platform, offering affordable carpooling to numerous destinations and routes across East Africa.",
+    "Why": [
+      "Real-time travel updates",
+      "AI-powered route planning",
+      "Group ride coordination ",
+      "Multi-modal travel support"
+    ],
+    "Why2": [
+      "Privacy and safety first",
+      "Simple, mobile-first interface"
+      
+    ]
+  },
+  
+  "Contact": {
+    "address": "Nairobi, Kenya",
+    "phone": "0728777136",
+    "email": "davidrogola@gmail.com"
+    },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Real-Time Community Travel Alerts",
+      "text": "Users can get real-time travel updates and security alerts from fellow commuters."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "AI-Powered Trip Planning",
+      "text": "Suggests optimal routes, departure times, and ride options ."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Group Ride Coordination & Cost Sharing",
+      "text": "Users traveling to the same location can form groups to share rides."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Multi-Modal Trip Integration",
+      "text": "Encourages smarter urban mobility, especially in Kenyan towns.."
+    }
+  ]
+}
