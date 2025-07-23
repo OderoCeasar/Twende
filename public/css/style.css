@@ -203,6 +203,8 @@ a:focus,
   outline: none;
   outline-offset: none;
 }
+
+
 /* Header Section */
 .intro {
   display: table;
@@ -210,6 +212,10 @@ a:focus,
   padding: 0;
   background: url(../img/intro-bg2.jpg) center center no-repeat;
   background-color: #e5e5e5;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-filter: blur(0);  
+  filter: blur(0);  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
