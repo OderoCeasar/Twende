@@ -1,7 +1,8 @@
 {
   "Header": {
     "title": "TWENDE",
-    "paragraph": "Travel More, Spend Less"
+    "paragraph": "Travel More, Spend Less",
+    "subParagraph": "Africa’s Top Travelling Platform"
         
   },
   "About": {
@@ -33,7 +34,7 @@
     {
       "icon": "fa fa-bullhorn",
       "title": "AI-Powered Trip Planning",
-      "text": "Suggests optimal routes, departure times, and ride options ."
+      "text": "Suggests optimal routes, departure times, and ride options."
     },
     {
       "icon": "fa fa-group",
@@ -43,7 +44,7 @@
     {
       "icon": "fa fa-magic",
       "title": "Multi-Modal Trip Integration",
-      "text": "Encourages smarter urban mobility, especially in Kenyan towns.."
+      "text": "Encourages smarter urban mobility, especially in Kenyan towns."
     }
   ]
 }

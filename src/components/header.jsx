@@ -13,8 +13,10 @@ export const Header = (props) => {
                   {props.data ? props.data.title : "Loading"}
                   <span></span>
                 </h1>
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                
+                <p>
+                  {props.data ? props.data.paragraph : "Loading"}<br /> <br />
+                  {props.data ? props.data.subParagraph : "Loading more..."}
+                </p>
                 <a
                   href="https://play.google.com/store"
                   className="btn btn-custom btn-lg page-scroll"

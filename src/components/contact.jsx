@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import { toast } from "react-toastify";
 
 const initialState = {
   name: "",
@@ -27,16 +28,17 @@ export const Contact = (props) => {
         if (process.env.NODE_ENV === "development") {
           console.log("Success:", result.text);
         }
+        toast.success("Message sent successfully!");
         clearState();
       },
       (error) => {
         if (process.env.NODE_ENV === "development") {
           console.log("Error:", error.text);
         }
+        toast.error("Failed to send message. Please try again.");
       }
     );
 };
-
   return (
     <div>
       <div id="contact">

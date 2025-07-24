@@ -6,6 +6,8 @@ import { About } from "./components/about";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -26,6 +28,7 @@ const App = () => {
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
       <Contact data={landingPageData.Contact} />
+      <ToastContainer position="top-center" autoClose={3000} />
     </div>
   );
 };
